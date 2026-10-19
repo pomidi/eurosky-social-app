@@ -42,10 +42,6 @@ import {
   Bell_Stroke2_Corner0_Rounded as BellIcon,
 } from '#/components/icons/Bell'
 import {
-  Bookmark as BookmarkIcon,
-  BookmarkFilled as BookmarkFilledIcon,
-} from '#/components/icons/Bookmark'
-import {
   BulletList_Filled_Corner0_Rounded as ListFilledIcon,
   BulletList_Stroke2_Corner0_Rounded as ListIcon,
 } from '#/components/icons/BulletList'
@@ -777,19 +773,6 @@ export function DesktopLeftNav({routeName}: {routeName: string}) {
             icons={{
               inactive: ListIcon,
               active: ListFilledIcon,
-            }}
-          />
-          <NavItem
-            label={l({
-              message: 'Saved',
-              context: 'link to bookmarks screen',
-            })}
-            href="/saved"
-            navItem="saved"
-            minimal={leftNavMinimal}
-            icons={{
-              inactive: BookmarkIcon,
-              active: BookmarkFilledIcon,
             }}
           />
           <NavItem
